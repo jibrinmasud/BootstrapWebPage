@@ -1,67 +1,271 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Bootstrap Testing</title>
-</head>
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">SKATE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Videos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Photos</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Swag
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Pants</a></li>
-                            <li><a class="dropdown-item" href="#">Shirts</a></li>
-                            <li><a class="dropdown-item" href="#">Apparel</a></li>
-                        </ul>
-                    </li>
+          <a class="navbar-brand" href="#">SKATE</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Swag
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Pants</a></li>
+                  <li><a class="dropdown-item" href="#">Shirts</a></li>
+                  <li><a class="dropdown-item" href="#">Apparel</a></li>
                 </ul>
-            </div>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-    <div class="sectionLight">
+      </nav>
+      <div class="sectionLight">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="jumbotron">
+              <div class="container">
+                <h1 class="display-4">Welcome to My world!</h1>
+                <p class="lead">Total Radness since 1987</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-sm-12 col-md-6">
+            <div
+              id="carouselExampleInterval"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img
+                    src="assets/skate1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/skate3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Skate For life</h5>
+                    <p>Show me Some Tricks.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/skate4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+
+      <!-- Section Two -->
+      <div class="sectionDark">
+        <div class="row">
+          <div class="col-sm-12 col-md-1 offset-md-2">
+            <img src="assets/skate7.jpg" class="img-fluid" />
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+            <div class="row">
+              <div class="col-sm-12">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis enim vitae esse reprehenderit tenetur repudiandae
+                  quasi soluta impedit mollitia ipsam libero, velit fuga
+                  necessitatibus earum, at possimus laborum sunt laudantium!
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-9">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consectetur, ex nihil laudantium sed explicabo similique natus
+                  commodi ipsam doloribus provident deserunt aut aperiam
+                  placeat, iste nemo dolores vero? Quibusdam, exercitationem.
+                </p>
+              </div>
+              <div class="col-sm-12 col-md-3">
+                <img src="assets/kf.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-3"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="coolstuffwraper">
+              <button
+                type="button"
+                class="btn btn-lg btn-Coolstuff"
+                data-bs-toggle="modal"
+                data-bs-target="#coolstuffModel"
+              >
+                Get Cool Stuff
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sectionLight">
+
         <div class="row">
             <div class="col-sm-12">
-                <div class="jumbotron">
-                    <div class="container">
-                        <h1 class="display-4">Welcome to My world!</h1>
-                        <p class="lead">Total Radness since 1987</p>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <img src="assets/skate5.jpg" class="img-fluid img-Center" alt="">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button type="button" class="btn btn-lg btnCenter">Kick Flip</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
+      </div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="coolstuffModel"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="contentLabel">
+                Get Exculsive Content
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <img src="assets/kff.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                        <form>
+                            <div class="form-group">
+                                <label for="Name">Name:</label>
+                                <input class="form-control" type="text" placeholder="What's Your Name?" aria-label="Name">
+                                <label for="Email">Email:</label>
+                                <input class="form-control" type="text" placeholder="Enter Your Email to get Cool Stuff Content" aria-label="Email">
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Model -->
     </div>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-</body>
 
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
